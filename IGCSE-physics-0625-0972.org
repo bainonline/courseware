@@ -113,11 +113,12 @@ And to the beginning and end of the TIME.
 To absolute small,
 (show the needle and ask to look at the pointed tip)
 
+$$
 \[ \mbox{ Size of a needle point? : }
 10^{-3}m\]
 \[ \mbox{ Size of hydrogen atom : } \[ 0.5 * 10^{-10}m \]
 \[ \mbox{ Size of carbon atom: }  1.54 * 10^{-10}m\]
-
+$
 This gives us
 \[ 2 * 10^7 \mbox{ Hydrogen atoms or } \]
 
