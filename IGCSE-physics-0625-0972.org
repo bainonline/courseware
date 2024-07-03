@@ -1,0 +1,168 @@
+#+title: Igcse Physics 0625 0972
+
+|-------+------+------------------+--------------+-------------------------------|
+| Month | Week | Dates            | Sessions     | Plan                          |
+|-------+------+------------------+--------------+-------------------------------|
+| June  |    1 | <2024-06-24 Mon> | Introduction | Units and measurements        |
+|       |      | <2024-06-25 Tue> |              | Lengths                       |
+|       |      |                  |              | Weights                       |
+|       |      |                  |              | Volume                        |
+|       |      |                  |              | Density                       |
+|       |      |                  |              | Length                        |
+|       |      |                  | Measurements | Repeatability                 |
+|       |      |                  |              | Accuracy                      |
+|       |      |                  |              | Errors                        |
+|-------+------+------------------+--------------+-------------------------------|
+| July  |    2 | <2024-07-01 Mon> | Measurements | Measuring time                |
+|       |      | <2024-07-02 Tue> |              | Estimation                    |
+|       |      |                  |              | Practical examples            |
+|-------+------+------------------+--------------+-------------------------------|
+|       |      | TBD              | Practical    | Measure Earth's circumference |
+|       |      |                  |              | Measure Density of a human    |
+|-------+------+------------------+--------------+-------------------------------|
+|       |      | TBD              | Recall       | Practice problems and quiz    |
+|-------+------+------------------+--------------+-------------------------------|
+
+
+* Physics
+** Units, Measurements and Accuracy
+The aim of this unit is to describe different methods and aspects of physical measurements.
+Introduction to inaccuracy and errors. Types units and recall of all the things they learned about lengths, weights, volumes
+Introduction to density.
+
+Practical measurements.
+
+
+1. What are units?
+2. How is length measured?
+3. Accuracy or error in measurements.
+4. Measuring earth's circumference.
+5. Volumes.
+6. Mass.
+7. Density.
+8. Measuring density of a human being.
+
+*** Experiments
+1. Measure a height of a building.
+   Measure length of the shadow of the building.
+   Measure length of a shadow of a meter stick.
+#+begin_example
+
+      +--=
+      |  |=
+     a|  | =       |-
+      |  |  =     b| -
+      +--=====     |===
+           c         d
+
+#+end_example
+   \[
+   \frac{a}{b} = \frac{c}{d} \therefore a = \frac{b * c}{d}
+   \]
+
+2. Measure circumference|of the earth.
+   Find which city has zero shadow day today and measure a shadow of long stick.
+   Use Eratosthenes's method to calculate circumference of Earth.
+
+3. Measuring density of a human.
+   Dunk a child in a drum of water?
+
+
+
+
+** Lecture 1 - 2 :
+*** Equipment:
+Needles, Tennis balls, Measuring stick
+Vernier caliper, protractor
+Weighing machines,
+
+*** Brief: Introduction to physics
+
+Introduced scientific method and its application to physics. We touched briefly
+about scope of physics and its day to day relevance. We touched upon
+fundamentals of mathematics required for physics (the language of
+physics/science).
+Children learned about measuring different quantities like length, weight,
+volume. Fundamental units (length, time, weight) as well as derived units
+(density). were introduced.
+
+*** Transscript:
+
+What is physics?
+Physics is a branch of science,
+Its roots are in curiocity of the man to  find out answer
+to the question. The question of The life, the universe and everything in it.
+
+Scientific method.
+
+1. Make a hypotheses, based on observed data.
+2. Find the limitations.
+3. Create an experiment to verify the hypotheses.
+4. If the experiment succeeds, confidence on the theory increases.
+5. If the experiment fails???? hypotheses MUST BE WRONG or at least missing
+   something.
+
+
+In physics we deal with
+Daily objects (Juggle tennis balls)
+
+To absolute large, the end of the universe
+
+And to the beginning and end of the TIME.
+
+To absolute small,
+(show the needle and ask to look at the pointed tip)
+
+\[ \mbox{ Size of a needle point? : }
+10^{-3}m\]
+\[ \mbox{ Size of hydrogen atom : } \[ 0.5 * 10^{-10}m \]
+\[ \mbox{ Size of carbon atom: }  1.54 * 10^{-10}m\]
+
+This gives us
+\[ 2 * 10^7 \mbox{ Hydrogen atoms or } \]
+
+\[ 6.66 * 10^6 \mbox{ Carbon atoms } \]
+
+
+How do we measure something?
+
+Units
+
+Recall Maitreyi's stick
+
+*** Fundamental Units:
+
+Length : \[m\]
+Mass   : \[kg\]
+Time   : \[sec\]
+
+*** Derived units
+Volume : \[m^3\]
+
+Density : \[\frac{kg}{m^3}\]
+
+** Lecture 3 - 4
+
+*** Brief: Accuracy of measurements and measuring time
+We discussed multiple ways of increasing accuracy of measurements.
+We discussed how to measure time. Direct measurements involve clocks.
+Principles of clocks (pendulum).
+Solved problems regarding pendulum and discussed properties of pendulum.
+
+*** Instruments
+1. Accuracy of instruments
+2. Increasing accuracy
+3. Measurement of time
+
+*** Direct measurements:
+Measuring interval of pendulum
+
+*** Indirect measurement:
+Measuring thickness of a paper.
+Measuring diameter of a sub mm tube.
+
+*** Homework:
+1. Read chapter 1 and take notes in rough book of main points. and solve in chapter problems for chapter 1.
+2. Solve in chapter problems in rough book (Not end of chatper problems).
+
+**

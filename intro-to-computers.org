@@ -1,0 +1,69 @@
+#+title: Intro To Computers
+
+Lesson Plan
+
+| Month | Week | Dates            | Days | Sessions | Plan      |
+|-------+------+------------------+------+----------+-----------|
+| June  |    1 | <2024-06-25 Tue> |    2 |        2 | Some plan |
+|       |      |                  |      |          |           |
+|-------+------+------------------+------+----------+-----------|
+|       |    2 |                  |      |          |           |
+|       |      |                  |      |          |           |
+
+
+
+
+* Modules
+** Introduction to what is computers and computer science
+*** Computer science is about computers as much as astronomy is about telescopes
+*** History of computers
+*** Uses of computers
+*** Where computers fail
+*** Operating systems and applications
+** Keeping Secrets
+*** Keeping things private
+**** Why?
+**** What?
+**** How?
+***** Nothing is 100% safe
+*** Keeping things safe
+**** Elaborate on How
+**** Safety keeping requirements and technologies
+**** Passwords/OTP dos and don't
+**** Practicals
+**** Cracking open the safes
+*** Sharing things safely
+*** Basics of encryption (theory and practical)
+** Processing data
+*** What is data
+*** How is data stored
+*** How is data retrieved
+*** Data processing (Only broad overview)
+**** Word processing
+**** Accounting software
+**** Data bases
+**** Spread sheets
+*** Using spread sheets to gain insights on data
+**** Co-expertise, Solving math/physics/chemistry problems using computers
+***** Using spreadsheets to graph
+***** Using programming to gain more insights
+** Introduction to basics of programming
+*** Introduction to algorithms (braking problems down)
+*** Introduction to python
+*** Simple practical programs
+**** Graphics
+**** Games
+**** Math solvers
+** Internet, web and social media
+*** Accessing internet
+**** Web
+**** Messaging
+**** Email
+*** Internet resources
+**** Wikipedia
+**** Mailing lists
+**** Social Media
+*** Cloud
+**** Concepts
+**** Cloud storage
+**** Services examples (google docs, zoho office)
