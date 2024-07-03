@@ -141,7 +141,7 @@ Volume : \[m^3\]
 
 Density : \[\frac{kg}{m^3}\]
 
-** Le cture 3 - 4 : July week 1 (1st  and 2nd)
+** Lecture 3 - 4 : July week 1 (1st  and 2nd)
 
 *** Brief: Accuracy of measurements and measuring time
 We discussed multiple ways of increasing accuracy of measurements.
