@@ -1,27 +1,31 @@
 #+title: Igcse Physics 0625 0972
 
-|-------+------+------------------+--------------+-------------------------------|
-| Month | Week | Dates            | Sessions     | Plan                          |
-|-------+------+------------------+--------------+-------------------------------|
-| June  |    1 | <2024-06-24 Mon> | Introduction | Units and measurements        |
-|       |      | <2024-06-25 Tue> |              | Lengths                       |
-|       |      |                  |              | Weights                       |
-|       |      |                  |              | Volume                        |
-|       |      |                  |              | Density                       |
-|       |      |                  |              | Length                        |
-|       |      |                  | Measurements | Repeatability                 |
-|       |      |                  |              | Accuracy                      |
-|       |      |                  |              | Errors                        |
-|-------+------+------------------+--------------+-------------------------------|
-| July  |    2 | <2024-07-01 Mon> | Measurements | Measuring time                |
-|       |      | <2024-07-02 Tue> |              | Estimation                    |
-|       |      |                  |              | Practical examples            |
-|-------+------+------------------+--------------+-------------------------------|
-|       |      | TBD              | Practical    | Measure Earth's circumference |
-|       |      |                  |              | Measure Density of a human    |
-|-------+------+------------------+--------------+-------------------------------|
-|       |      | TBD              | Recall       | Practice problems and quiz    |
-|-------+------+------------------+--------------+-------------------------------|
+|-------+------+------------------+--------------+--------------------------------|
+| Month | Week | Dates            | Sessions     | Plan                           |
+|-------+------+------------------+--------------+--------------------------------|
+| June  |    1 | <2024-06-24 Mon> | Introduction | Units and measurements         |
+|       |      | <2024-06-25 Tue> |              | Lengths                        |
+|       |      |                  |              | Weights                        |
+|       |      |                  |              | Volume                         |
+|       |      |                  |              | Density                        |
+|       |      |                  |              | Length                         |
+|       |      |                  | Measurements | Repeatability                  |
+|       |      |                  |              | Accuracy                       |
+|       |      |                  |              | Errors                         |
+|-------+------+------------------+--------------+--------------------------------|
+| July  |    2 | <2024-07-01 Mon> | Measurements | Measuring time                 |
+|       |      | <2024-07-02 Tue> |              | Estimation                     |
+|       |      |                  |              | Practical examples             |
+|-------+------+------------------+--------------+--------------------------------|
+|       |    3 | <2024-07-08 Mon> | Practical    | Observing pendulums            |
+|       |      |                  |              | Swinging on rope               |
+|       |      |                  |              |                                |
+|       |      | <2024-07-09 Tue> |              | Measuring densities            |
+|       |      |                  |              | Measure Density of a human     |
+|       |      |                  |              |                                |
+|-------+------+------------------+--------------+--------------------------------|
+|       |      | TBD              | Recall       | Practice problems and quiz     |
+|-------+------+------------------+--------------+--------------------------------|
 
 
 * Physics
@@ -113,12 +117,11 @@ And to the beginning and end of the TIME.
 To absolute small,
 (show the needle and ask to look at the pointed tip)
 
-$$
 \[ \mbox{ Size of a needle point? : }
 10^{-3}m\]
 \[ \mbox{ Size of hydrogen atom : } \[ 0.5 * 10^{-10}m \]
 \[ \mbox{ Size of carbon atom: }  1.54 * 10^{-10}m\]
-$
+
 This gives us
 \[ 2 * 10^7 \mbox{ Hydrogen atoms or } \]
 
@@ -165,3 +168,158 @@ Measuring diameter of a sub mm tube.
 *** Homework:
 1. Read chapter 1 and take notes in rough book of main points. and solve in chapter problems for chapter 1.
 2. Solve in chapter problems in rough book (Not end of chatper problems).
+
+
+** Lecture 5 -6 :
+
+*** We did practicals of the concepts learned so far.
+Conducted experiments on pendulum and verified the observations/conclusions by swinging ourselves on the rope.
+We also used a small boy and dunked him in water to measure density of a human body.
+Recalled the Archimedes experiment
+
+*** Practicals
+Observing pendulums
+Swinging on rope
+Measuring densities
+Measure Density of a human
+
+*** Transcript
+
+Experiments:
+
+**** Pendulum
+
+Apparatus: Pendulum with variable length and weight. Long rope (for children to swing on)
+
+Hypothesis 1:
+Pendulum period will increase with increase in wieght
+
+Hypothesis 2:
+Pendulum period will increase with its length
+
+Hypothesis 3: Period will decrease if we release it from higher height
+
+#+begin_example
+
+                      p  o        ---
+                         |         |
+                         |         |
+                         |         |
+                         |         |
+                         |
+                         |         L
+                         |
+                         |         |
+                         |         |
+                        ---        |
+                    M  ( c )      ---
+                        ---
+
+
+#+end_example
+
+Lets call time taken by pendulum to perform one complete swing : T
+
+Mass of pendulum is : M
+
+Height at which the pendulum is released from : h
+
+H1 -> \[ T \propto M \]
+
+H2 -> \[ T \propto L \]
+
+H3 -> \[ T \propto h \]
+
+Experiment
+
+Testing H1: Keeping length of pendulum same, change the weight (mass) M attached at the end.
+
+Testing H2: Keeping mass of pendulum same, change the length L.
+
+Testing H3: Keeping both length and mass of pendulum same, change the height at which we release the pendulum.
+
+Important Note : The length of pendulum is from the pivot (P) to center of gravity of the weight (c). So if stacking up weights on top of each other to increase the mass remember to readjust the length so that it stays constant.
+
+We verified our observations by swinging on a rope ourselves.
+
+
+Observations:
+
+For given length L = l (?? we didn't measure l). The period of pendulum was 1.6 seconds
+No matter how much we changed M or h the period T did not change/
+
+When we decreased L where l` < l : T also decreased
+
+Conclusion
+
+H1 and H3 are wrong.
+
+Where as H2 is correct in the form that if we increase the length of pendulum the period increases and vise versa.
+
+Extra work: How much does T increase or decrease if L is increased or decreased by 1 cm? (Precise answer is not expected but general thought about how it will behave)
+Hint: Use the table in the 1st chapter questions which describes a student doing experiment with the pendulum.
+
+**** Density
+
+Apparatus:
+
+Large barrel and small person .
+Enough water to fill the barrel.
+A smaller measured water container to fill up specific quantities of water. (10 liter water container with markings at 1/2 , 1/4th )
+
+#+begin_example
+
+       \      |^^^|         /
+       |=======o=o=========|
+       |      \---/        |
+       |    |   |    |     |
+       |    \---|---/      |
+       |        |          |
+       |        |          |
+       |       / \         |
+       |      /   \        |
+       |-------------------|
+
+
+#+end_example
+Procedure:
+
+Fill the barrel, let the person sit in the barrel.
+Fill the barrel with water fully.
+Let the water stabilize.
+Let out the person.
+
+Observe the water level and slowly fill it up measuring using the marked container.
+
+
+Observations:
+
+We used 33.5 liters of water to fill the barrel completely again.
+
+Arsh (the person used) has weight of 32.55 kg.
+
+Calculations
+
+\[ \rho = \frac{m}{v}  \]
+
+\[ m = 32.55 liters \]
+
+\[ 33.5l = 0.0335 m^3 \]
+
+\[ \hence \rho = \frac{32.55}{0.0335} \frac{kg}{m^3} \]
+
+\[ = 971.64 \frac{kg}{m^3}\]
+
+
+**** Home work:
+Arsh has weight of 32.55 kgs and volume we measured was 33.5 liters. Calculate his density.
+
+Find out standard density of a human body from you biology teacher or any other sources.
+
+Now that you know the density of a human body. What do you think happens when we jump in the water?
+
+1. We sink immediately
+2. We float
+
+
+Can we control if we sink or float? What are the various ways used to make body sink in water ? or float on water? Explain the mechanism by which it works.

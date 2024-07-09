@@ -2,13 +2,16 @@
 
 Lesson Plan
 
-| Month | Week | Dates            | Days | Sessions | Plan      |
-|-------+------+------------------+------+----------+-----------|
-| June  |    1 | <2024-06-25 Tue> |    2 |        2 | Some plan |
-|       |      |                  |      |          |           |
-|-------+------+------------------+------+----------+-----------|
-|       |    2 |                  |      |          |           |
-|       |      |                  |      |          |           |
+| Month | Week | Dates            | Days | Plan                               |
+|-------+------+------------------+------+------------------------------------|
+| June  |    1 | <2024-06-25 Tue> |    1 | Intro and breif about topics       |
+|       |      |                  |      |                                    |
+|-------+------+------------------+------+------------------------------------|
+|       |    2 | <2024-07-08 Mon> |    1 | Components of computer             |
+|       |      |                  |      | Operating systems and applications |
+|       |      |                  |      |                                    |
+|-------+------+------------------+------+------------------------------------|
+
 
 
 
@@ -18,15 +21,21 @@ Lesson Plan
 *** Computer science is about computers as much as astronomy is about telescopes
 *** History of computers
 *** Uses of computers
-*** Where computers fail
-*** Operating systems and applications
-** Keeping Secrets
-*** Keeping things private
-**** Why?
 **** What?
 **** How?
 ***** Nothing is 100% safe
-*** Keeping things safe
+*** Components
+**** Hardware
+**** Von Neumann architecture
+**** CPU
+**** Memory
+***** RAM/ROM
+***** Offline storage
+***** Cloud storage
+**** Inputs
+**** Output devices
+**** Network
+** Keeping things safe
 **** Elaborate on How
 **** Safety keeping requirements and technologies
 **** Passwords/OTP dos and don't
