@@ -1,0 +1,377 @@
+%%% Use the next line if you want questions
+\documentclass[12pt,addpoints]{exam}
+%%% OR, use the next line if you want solutions
+%\documentclass[12pt,answers,addpoints]{exam}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\sisetup{per-mode=symbol}
+\usepackage{physics}
+\usepackage{ifthen}
+\usepackage{tikz}
+\usepackage[outline]{contour} % glow around text
+\usetikzlibrary{calc} % for pic
+\usetikzlibrary{angles,quotes} % for pic
+\usetikzlibrary{patterns}
+\usepackage{ circuitikz }
+
+\tikzset{>=latex} % for LaTeX arrow head
+\contourlength{1.2pt}
+
+
+\colorlet{myred}{red!65!black}
+\tikzstyle{ground}=[preaction={fill,top color=black!10,bottom color=black!5,shading angle=20},
+                    fill,pattern=north east lines,draw=none,minimum width=0.3,minimum height=0.6]
+\tikzstyle{mass}=[line width=0.6,red!30!black,fill=red!40!black!10,rounded corners=1,
+                  top color=red!40!black!20,bottom color=red!40!black!10,shading angle=20]
+\tikzstyle{rope}=[brown!70!black,line width=1.2,line cap=round] %very thick
+
+% FORCES SWITCH
+\tikzstyle{force}=[->,myred,thick,line cap=round]
+\tikzstyle{Fproj}=[force,myred!40]
+\newcommand{\vbF}{\vb{F}}
+\newboolean{showforces}
+\setboolean{showforces}{true}
+
+\pointpoints{mark}{marks}
+
+\totalformat{Pregunta \thequestion: \totalpoints puntos}
+
+\pointsinrightmargin
+\bracketedpoints
+
+\begin{document}
+
+%% Some Formatting Options:
+%% Make an easy blank environment (just type \blank{1.5in} now)
+\newcommand\blank[1]{\makebox[#1]{\hrulefill}}
+%% Tell TeX to make linebreaks before questions begin
+\newcommand{\myquestion}{\filbreak\question}
+\newcommand{\mypart}{\filbreak\part}
+%% then replace all your \question commands with \myquestion
+%% commands.  \filbreak basically means "this is a good place to break
+%% the page, and fill the bottom of the page with blank space, unless you
+%% can put enough more on the page to reach the next \filbreak, in which
+%% case the present \filbreak will have no effect at all".  The effect of
+%% \filbreak before each question is that page breaks will occur only
+%% before questions.
+%% This command below makes an even nicer fill-in-the-blank.
+\newcommand*{\TickBox}{{\fboxsep 0pt \fbox{\rule{0em}{2em}\rule{10em}{0em}}}}
+
+\begin{coverpages}
+
+\begin{center}
+  \begin{Large}
+\vspace{-0.3in}
+Swadhaa Waldorf Learning Centre
+
+Physics Test Paper Grade 9 Ch. 1
+
+\end{Large}
+\end{center}
+
+\vspace{0.5in}
+
+\begin{center} \fbox{\fbox{\parbox{5.5in}{
+        Grade: 9 Duration: 1 hour Subject: Physics 0625 Marks: \numpoints{}
+
+        \bigskip
+
+        \makebox[\textwidth]{Child's Name:\hfill}
+
+        \bigskip
+        You must answer on the question paper.
+
+        Good luck!
+        \bigskip
+
+      }}}
+  \bigskip
+
+  INSTRUCTIONS :
+  \begin{itemize}
+    \item Answer all questions.
+    \item Use a black or dark blue pen. You may use an HB pencil for any diagrams or graphs.
+    \item Write your name in the space at the top of the page.
+    \item Write your answer to each question in the space provided.
+    \item Do not use an erasable pen or correction fluid.
+    \item You may use calculators in this paper.
+    \item You may use tracing paper.
+	\item You must show all necessary working clearly.
+  \end{itemize}
+
+
+\end{center}
+
+\vspace{1.1in}
+
+\begin{center}
+\begin{small}
+\begingroup
+  \hpword{Marks:}
+  \hsword{Score:}
+  \gradetable[h]
+\endgroup
+\end{small}
+\end{center}
+
+
+\end{coverpages}
+
+\pagestyle{headandfoot} \extraheadheight{.25in}
+\footer{} {Page \thepage\ of \numpages} {\iflastpage{End of exam.}{Please go on to the next page\ldots}}
+
+\begingradingrange{mcq}
+\begin{questions}
+  \fullwidth{\Large \textbf{Multiple Choice Questions} \\ Marks : \pointsinrange{mcq}  }
+
+
+\uplevel{No partial credit will be awarded.  Circle \emph{one} choice \emph 
+for each of the multiple-choice questions.  }
+
+
+\myquestion[1] The unit SI units of length, mass and time are :
+\unit{\metre}, \unit{\gram}, \unit{\second}.
+
+These are called
+	\begin{choices}
+	\choice Derived units
+	\CorrectChoice Fundamental units.
+	\choice Natural units.
+	\choice Commercial units.
+	\end{choices}
+
+
+\myquestion[1] Which of the following quantities mesaured NOT in derived unit?
+
+	\begin{choices}
+	\correctchoice width of pencil
+	\choice space occupied by a baloon
+	\choice speed of a car
+	\choice area of a shadow of a person
+	\end{choices}
+
+
+\myquestion[1] The correct unit in SI system for density $\rho$ is:
+
+	\begin{choices}
+	  \choice \unit{\kg^2\per\metre^3}
+	  \choice \unit{\kg\per\centi\metre^2}
+	\CorrectChoice \unit{\kg\per\m^3}
+	\choice \unit{\g\per\litre^3}
+	\end{choices}
+
+
+\myquestion[1] The oil floats on water because ?
+ \begin{choices}
+   \choice Oil has less mass than water
+   \correctchoice 1 \unit{\l} Water occupies less space than 1 \unit{\l} oil
+   \choice 1 \unit{\l} Water occupies more space than 1 \unit{\l} oil
+   \choice 1 \unit{\l} Water occupies same space as 1 \unit{\l} oil.
+\end{choices}
+
+\myquestion If mass of a boy is 32\unit{\kg} and typical density of a human body is 0.985 \unit{\g\per\cm^3}
+
+Formula for density :  $\rho = \frac{m}{v}$ \unit{\kg\per\m^{3}}
+\begin{parts}
+\part[2] The density of a typical human body in \unit{\kg\per\m^3} is
+	\begin{choices}
+	\correctchoice 985 \unit{\kg\per\m^3}
+	\choice 0.001 \unit{\kg\per\m^3}
+	\choice 9.85 \unit{\kg\per\m^3}
+	\choice 0.00985 \unit{\kg\per\m^3}
+	\choice 0.985 \unit{\kg\per\m^3}
+	\end{choices}
+
+\part[2] Volume of the boy's body is
+	\begin{choices}
+	\choice 9.85 \unit{m^3}
+	\correctchoice 0.03248 \unit{m^3}
+	\choice 9 \unit{m^3}
+	\choice 30.781 \unit{m^3}
+	\choice 1 \unit{m^3}
+	\end{choices}
+\end{parts}
+
+\myquestion[1] Which of the following statements is true
+	\begin{choices}
+	\choice Meter rule with mm markings is more accurate than Vernier caliper
+	\correctchoice Vernier caliper has accuracy of 0.01 mm
+	\choice Vernier caliper is used to measure accurate time
+	\choice Vernier caliper is used primarily to measure road lengths
+	\end{choices}
+
+
+\myquestion[4] Consider following equipments
+
+
+1 Meter long measuring stick
+
+10 Meters long Measuring tape
+
+1 Foot long student's scale
+
+
+Which of the following statements are true (Mark as many as you find are true)
+
+
+	\begin{choices}
+	\choice 1 ft scale is more accurate than 1m rule which is more accurate than 10m measuring tape
+	\correctchoice 10m measuring tape will be used to measure a shape of a room
+	\choice Leaving practical difficulties aside you can measure any given length by either of these instruments
+	\correctchoice The 1m rule and 1ft scale can not be used to measure lengths that are not straight lines
+	\end{choices}
+
+
+	\myquestion[1] A stop watch was used to measure a runner in race with following readings at start and end of the lap.
+
+    1.	1m:40s:100ms
+
+	2.	2m:50s:100ms
+
+	How long did the runner take to finish the lap?
+
+	\begin{choices}
+	\choice 50.1s
+	\correctchoice 50s
+	\choice 90se
+	\choice 110.5s
+  \end{choices}
+
+\myquestion[1] In following diagram if l = 15.5 cm
+
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw  (1.75,10.25) rectangle (10.5,9.25);
+\draw  (4.25,10.75) circle (0.5cm);
+\draw  (5.25,10.75) circle (0.5cm);
+\draw  (6.25,10.75) circle (0.5cm);
+\draw  (8.25,10.75) circle (0.5cm);
+\draw  (7.25,10.75) circle (0.5cm);
+\draw  (2.75,11.75) rectangle (3.75,10.25);
+\draw  (8.75,11.75) rectangle (9.75,10.25);
+\draw [<->, >=Stealth, dashed] (3.75,12.5) -- (8.75,12.5);
+\node [font=\LARGE] at (6.5,13) {l};
+\end{circuitikz}
+
+What is the diameter of each coin?
+
+  \begin{choices}
+	\choice 310mm
+	\choice 31mm
+	\choice 3310mm
+	\choice 3100mm
+  \end{choices}
+
+
+
+
+
+\endgradingrange{mcq}
+
+
+
+\newpage
+
+\begingradingrange{theory}
+
+\fullwidth{\Large \textbf{Theory} \\ Marks : \pointsinrange{theory}}
+
+\uplevel{For the following problems, show all your work.  Partial
+marks  will be awarded for correct reasoning. Write units for all your answers. Answers without corresponding units in each step will be given zero marks. }
+
+\question A plot of land has following dimensions:
+
+Width = $20 ft$ and Length = $30 ft.$
+
+\begin{parts}
+	\part[1] Calculate area of the plot in $ft^{2}$ as unit.
+
+	\begin{solutionorlines}[1in]
+	\end{solutionorlines}
+
+	\part[2] Convert the area of the plot in SI units. Hint :  $1ft = 0.305 m$
+	\begin{solutionorlines}[1in]
+	\end{solutionorlines}
+
+    \part[2] If rectangular shade of height $10ft$ was erected on the entire plot. What will be the volume of the whole shade? (Ignore the thickness of the walls),
+
+    \begin{solutionorlines}[1in]
+	\end{solutionorlines}
+
+\end{parts}
+
+\myquestion[5] Complete the following table. e.g. SI unit of length is $m$
+
+\begin{center}
+\begin{tabular}{||c | c||}
+ \hline
+Quantity & SI unit  \\ [0.5ex]
+ \hline\hline
+ Length & $m$ \\
+ \hline
+ Area  &   \\
+ \hline
+ Time  &  \\
+ \hline
+ Volume  &  \\
+ \hline
+ Density &  \\
+ \hline
+  Diameter & \\
+ \hline
+\end{tabular}
+\end{center}
+
+
+\endgradingrange{theory}
+
+
+\newpage
+
+\begingradingrange{atp}
+
+\fullwidth{\Large \textbf{Alternative to practical} \\ Marks : \pointsinrange{atp}}
+
+\uplevel{For the following problems, show all your work.}
+
+ Your answer must include following sections
+ \begin{enumerate}
+   \item Equipment required
+
+   \item Goal of the experiment (State the reasoning for choosing this particular experiment
+
+   \item Diagram of setup
+
+   \item Procedure
+
+   \item How will you determine the final result
+
+ \end{enumerate}
+
+Partial marks will be awarded for correct reasoning.
+
+\question[10]
+A student is given three pieces of metal. One block is of sliver. One is of Steel. Third piece is blob of unknown metal.
+
+Design an experiment to determine if the third block is of silver or steel or neither. Hint: A block of given metal any shape and size will always have same density.
+
+Assume that each block is made of only one metal and does not have any impurities (i.e. if it is silver it is entirely made of silver and nothing else).
+
+
+\fillwithlines{\stretch{1}}
+
+\newpage
+
+\fillwithlines{\stretch{1}}
+
+\endgradingrange{atp}
+
+\newpage
+
+\end{questions}
+
+
+\end{document}
