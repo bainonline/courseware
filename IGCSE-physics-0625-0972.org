@@ -1,5 +1,6 @@
 #+title: Igcse Physics 0625 0972
 
+
 |-------+------+------------------+--------------+--------------------------------|
 | Month | Week | Dates            | Sessions     | Plan                           |
 |-------+------+------------------+--------------+--------------------------------|
@@ -30,6 +31,8 @@
 
 * Physics
 ** Units, Measurements and Accuracy
+
+
 The aim of this unit is to describe different methods and aspects of physical measurements.
 Introduction to inaccuracy and errors. Types units and recall of all the things they learned about lengths, weights, volumes
 Introduction to density.

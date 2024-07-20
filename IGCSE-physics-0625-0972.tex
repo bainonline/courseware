@@ -1,4 +1,4 @@
-% Created 2024-07-09 Tue 18:11
+% Created 2024-07-15 Mon 13:37
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -12,6 +12,8 @@
 \usepackage{amssymb}
 \usepackage{capt-of}
 \usepackage{hyperref}
+\usepackage{svg}
+\usepackage{tikz}
 \author{Abhijit Bhopatkar}
 \date{\today}
 \title{Igcse Physics 0625 0972}
@@ -60,9 +62,45 @@ July & 2 & \textit{<2024-07-01 Mon>} & Measurements & Measuring time\\[0pt]
 
 
 \section{Physics}
-\label{sec:orgb62e3d9}
+\label{sec:org3f33c39}
 \subsection{Units, Measurements and Accuracy}
-\label{sec:orge27853c}
+\label{sec:org0157fa3}
+
+
+\tikzset{>=latex}
+\contourlength{1.1pt}
+
+\colorlet{mydarkblue}{blue!50!black}
+\colorlet{myred}{red!65!black}
+\colorlet{watercol}{blue!80!cyan!10!white}
+\colorlet{darkwatercol}{blue!80!cyan!20!white}
+\tikzstyle{piston}=[blue!50!black,top color=blue!30,bottom color=blue!50,middle color=blue!20,shading angle=0]
+\tikzstyle{water}=[draw=mydarkblue,top color=watercol!90,bottom color=watercol!90!black,shading angle=5]
+\tikzstyle{vertical water}=[water,
+  top color=watercol!90!black!90,bottom color=watercol!90!black!90,middle color=watercol!80,shading angle=90]
+\def\tick#1#2{\draw[thick] (#1)++(#2:0.1) --++ (#2-180:0.2)}
+
+
+% PENDULUM SOLUTION
+\begin{tikzpicture}
+  \coordinate (M) at (\ang-90:\L);
+  \coordinate (M') at (0,-\L);
+  \coordinate (O) at (0,0);
+  \coordinate (B) at (0,\y);
+  \draw[ground] (-0.7*\L,\y) rectangle++ (1.2*\L,-\R);
+  \draw (-0.7*\L,\y) --++ (1.2*\L,0);
+  \draw[faded mass] (M') circle(\R);
+  \draw[dashed] (O) -- (B);
+  \draw[dashed] (M')++(0.7*\R,0) --++ ({0.5*\L*sin(\ang)},0) coordinate (A);
+  \draw[dashed] (M')++(0.7*\R,{\L-\L*cos(\ang)}) --++ ({1.1*\L*sin(\ang)},0);
+  \draw[<->] (A)++(0.12*\R,0) --++ (0,{\L-\L*cos(\ang)}) node[midway,left=-1] {$h$};
+  \rope{(O) -- (M)} \path (O) -- (M) node[midway,left=1] {$L$};
+  \fill[black] (O) circle(0.04);
+  \draw[mass] (M) circle(\R) node {$m$};
+  \draw[mass] (\R,\y) rectangle++ (3.2*\R,2.5*\R) node[midway] {$M$};
+  \draw pic[<-,"\,$\theta$",draw,angle radius=29,angle eccentricity=1.3] {angle=M--O--B};
+\end{tikzpicture}
+
 The aim of this unit is to describe different methods and aspects of physical measurements.
 Introduction to inaccuracy and errors. Types units and recall of all the things they learned about lengths, weights, volumes
 Introduction to density.
@@ -82,7 +120,7 @@ Practical measurements.
 \end{enumerate}
 
 \subsubsection{Experiments}
-\label{sec:orgfa761dc}
+\label{sec:orgaaaa3d0}
 \begin{enumerate}
 \item Measure a height of a building.
 Measure length of the shadow of the building.
@@ -115,15 +153,15 @@ Dunk a child in a drum of water?
 
 
 \subsection{Lecture 1 - 2 (June 24th, 25th):}
-\label{sec:orgb90026a}
+\label{sec:org3016490}
 \subsubsection{Equipment:}
-\label{sec:org095f7a4}
+\label{sec:orgaf9a1ed}
 Needles, Tennis balls, Measuring stick
 Vernier caliper, protractor
 Weighing machines,
 
 \subsubsection{Brief: Introduction to physics}
-\label{sec:orgccdac93}
+\label{sec:orgdeb5b57}
 
 Introduced scientific method and its application to physics. We touched briefly
 about scope of physics and its day to day relevance. We touched upon
@@ -134,7 +172,7 @@ volume. Fundamental units (length, time, weight) as well as derived units
 (density). were introduced.
 
 \subsubsection{Transscript:}
-\label{sec:org520292d}
+\label{sec:org570568a}
 
 What is physics?
 Physics is a branch of science,
@@ -181,30 +219,30 @@ Units
 Recall Maitreyi's stick
 
 \subsubsection{Fundamental Units:}
-\label{sec:org7b214b2}
+\label{sec:org73598d3}
 
 Length : \[m\]
 Mass   : \[kg\]
 Time   : \[sec\]
 
 \subsubsection{Derived units}
-\label{sec:org98f18c1}
+\label{sec:orgcd40c60}
 Volume : \[m^3\]
 
 Density : \[\frac{kg}{m^3}\]
 
 \subsection{Lecture 3 - 4 : July week 1 (1st  and 2nd)}
-\label{sec:orgc491782}
+\label{sec:org90b78fb}
 
 \subsubsection{Brief: Accuracy of measurements and measuring time}
-\label{sec:org005a198}
+\label{sec:org3d6fefb}
 We discussed multiple ways of increasing accuracy of measurements.
 We discussed how to measure time. Direct measurements involve clocks.
 Principles of clocks (pendulum).
 Solved problems regarding pendulum and discussed properties of pendulum.
 
 \subsubsection{Instruments}
-\label{sec:org68d324d}
+\label{sec:org237f3e7}
 \begin{enumerate}
 \item Accuracy of instruments
 \item Increasing accuracy
@@ -212,16 +250,16 @@ Solved problems regarding pendulum and discussed properties of pendulum.
 \end{enumerate}
 
 \subsubsection{Direct measurements:}
-\label{sec:org8a3ac3c}
+\label{sec:org4244ced}
 Measuring interval of pendulum
 
 \subsubsection{Indirect measurement:}
-\label{sec:org0f33d4a}
+\label{sec:orgf28cf66}
 Measuring thickness of a paper.
 Measuring diameter of a sub mm tube.
 
 \subsubsection{Homework:}
-\label{sec:org1b37abb}
+\label{sec:orgf70e828}
 \begin{enumerate}
 \item Read chapter 1 and take notes in rough book of main points. and solve in chapter problems for chapter 1.
 \item Solve in chapter problems in rough book (Not end of chatper problems).
@@ -229,29 +267,29 @@ Measuring diameter of a sub mm tube.
 
 
 \subsection{Lecture 5 -6 :}
-\label{sec:org84fc9e2}
+\label{sec:org824e6de}
 
 \subsubsection{We did practicals of the concepts learned so far.}
-\label{sec:org0c18b44}
+\label{sec:orgac21210}
 Conducted experiments on pendulum and verified the observations/conclusions by swinging ourselves on the rope.
 We also used a small boy and dunked him in water to measure density of a human body.
 Recalled the Archimedes experiment
 
 \subsubsection{Practicals}
-\label{sec:org98f9c5a}
+\label{sec:org28aebb9}
 Observing pendulums
 Swinging on rope
 Measuring densities
 Measure Density of a human
 
 \subsubsection{Transcript}
-\label{sec:org79f72a2}
+\label{sec:org515720f}
 
 Experiments:
 
 \begin{enumerate}
 \item Pendulum
-\label{sec:org34b2bc1}
+\label{sec:org90ad062}
 
 Apparatus: Pendulum with variable length and weight. Long rope (for children to swing on)
 
@@ -324,7 +362,7 @@ Extra work: How much does T increase or decrease if L is increased or decreased 
 Hint: Use the table in the 1st chapter questions which describes a student doing experiment with the pendulum.
 
 \item Density
-\label{sec:orgdc942ff}
+\label{sec:org9075e0a}
 
 Apparatus:
 
@@ -377,7 +415,7 @@ Calculations
 
 
 \item Home work:
-\label{sec:org9e7351e}
+\label{sec:orgd8c15ab}
 Arsh has weight of 32.55 kgs and volume we measured was 33.5 liters. Calculate his density.
 
 Find out standard density of a human body from you biology teacher or any other sources.
@@ -391,5 +429,16 @@ Now that you know the density of a human body. What do you think happens when we
 
 
 Can we control if we sink or float? What are the various ways used to make body sink in water ? or float on water? Explain the mechanism by which it works.
+
+
+\begin{tikzpicture}
+  \draw[thick,->] (0,0) -- (4.5,0) node[anchor=north west] {x axis};
+\draw[thick,->] (0,0) -- (0,4.5) node[anchor=south east] {y axis};
+  \foreach \x in {0,1,2,3,4}
+   \draw (\x cm,1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {0,1,2,3,4}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+
+\end{tikzpicture}
 \end{enumerate}
 \end{document}
